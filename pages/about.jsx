@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import React from 'react';
 import Nav from '../components/nav';
 // import '../styles/about.css';
 {
