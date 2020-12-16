@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+    font-size: 16px;
+}
+
+body {
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(230, 230, 230, 0.7);
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    font-family: acumin-pro-wide, sans-serif;
+    font-weight: 300;
+    transform: translateY(-100%);
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+}
+
+.menu-active {
+    transform: translateY(0%);
+}
+
+span {
+    font-size: 20px;
+    -webkit-transition: opacity 50ms ease-out;
+    -moz-transition: opacity 50ms ease-out;
+    -o-transition: opacity 50ms ease-out;
+    transition: opacity 50ms ease-out;
+}
+
+span:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.burger {
+    display: block;
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 20;
+    padding: 10px;
+    border-radius: 3px;
+    opacity: 0.9;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.burger:hover {
+    opacity: 0.6;
+}
+
+.burger-active {
+    transform: rotate(180deg);
+}
+
+.line {
+    display: block;
+    background-color: hsla(0, 0%, 100%, 0.9);;
+    width: 30px;
+    height: 4px; 
+    border-radius: 2px;
+    margin: 5px 0;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+}
+
+.line-active {
+    background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+        align-content: space-around;
+        height: 30vw;
+    }
+}
+
+.landing {
+    background-image: url("../images/scott-hewitt-yj8m3cl_wXo-unsplash.jpg");
+    min-height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+}
+.landing-shadow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(230, 230, 230, 0.2);
+    height: 100vh;
+    width: 100vw;
+}
+.title-container {
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    background-image: url("../images/HENNA/Grey-6-full.jpg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 90vw;
+    border-radius: 5px;
+}
+
+.title {
+    align-self: center;
+    opacity: 0.9;
+    font-family: 'Cormorant', serif;
+    font-weight: 300;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: 0.4rem;
+    text-shadow: 0px 0px 3px black;
+    -webkit-animation: fadeIn 1s ease-in;
+    -moz-animation: fadeIn 1s ease-in;
+    -o-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+h3 {
+    font-weight: 200;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 3px black;
+    -webkit-animation: fadeIn 1s ease-in 0.3s;
+    -moz-animation: fadeIn 1s ease-in 0.3s;
+    -o-animation: fadeIn 1s ease-in 0.3s;
+    animation: fadeIn 1s ease-in 0.3s;
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 2rem;
+    border-radius: 50%;
+    -webkit-transition: opacity 50ms ease-out;
+    -moz-transition: opacity 50ms ease-out;
+    -o-transition: opacity 50ms ease-out;
+    transition: opacity 50ms ease-out;
+    -webkit-animation: fadeIn 1s ease-in 0.6s;
+    -moz-animation: fadeIn 1s ease-in 0.6s;
+    -o-animation: fadeIn 1s ease-in 0.6s;
+    animation: fadeIn 1s ease-in 0.6s;
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .title-container {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+    .nav {
+        height: 233px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
