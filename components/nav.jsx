@@ -1,10 +1,14 @@
+import Link from 'next/link';
+
 export default function Nav() {
 	return (
 		<nav class='nav'>
 			<div class='logo'>
-				<a href='index.html'>
-					<h3>MILLICENT MEHNDI</h3>
-				</a>
+				<Link href='/'>
+					<a>
+						<h3>MILLICENT MEHNDI</h3>
+					</a>
+				</Link>
 				<div class='social'>
 					<a
 						href='https://www.facebook.com/Millicentmehndi'
@@ -25,13 +29,19 @@ export default function Nav() {
 			</div>
 			<ul class='menu'>
 				<li>
-					<a href='#'>ABOUT</a>
+					<Link href='/about'>
+						<a>ABOUT</a>
+					</Link>
 				</li>
 				<li>
-					<a href='gallery.html'>GALLERY</a>
+					<Link href='/gallery'>
+						<a>GALLERY</a>
+					</Link>
 				</li>
 				<li>
-					<a href='contact.html'>CONTACT</a>
+					<Link href='/contact'>
+						<a>CONTACT</a>
+					</Link>
 				</li>
 			</ul>
 		</nav>
