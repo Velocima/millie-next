@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Index() {
 	return (
@@ -10,15 +11,21 @@ export default function Index() {
 			<div class='landing'>
 				<div class='landing-shadow'>
 					<nav class='nav menu'>
-						<a href='./about.html'>
-							<span>ABOUT</span>
-						</a>
-						<a href='./gallery.html'>
-							<span class='center'>GALLERY</span>
-						</a>
-						<a href='./contact.html'>
-							<span>CONTACT</span>
-						</a>
+						<Link href='/about'>
+							<a>
+								<span>ABOUT</span>
+							</a>
+						</Link>
+						<Link href='/gallery'>
+							<a>
+								<span class='center'>GALLERY</span>
+							</a>
+						</Link>
+						<Link href='/contact'>
+							<a>
+								<span>CONTACT</span>
+							</a>
+						</Link>
 					</nav>
 					<div class='burger'>
 						<div class='line'></div>
