@@ -5,6 +5,7 @@ export default function Gallery() {
 	return (
 		<>
 			<Head>
+				<link rel='icon' type='image/png' href='/images/icon.png' />
 				<title>Gallery | Millicent Mehndi</title>
 			</Head>
 			<Nav />

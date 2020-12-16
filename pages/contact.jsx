@@ -4,6 +4,7 @@ export default function Contact() {
 	return (
 		<>
 			<Head>
+				<link rel='icon' type='image/png' href='/images/icon.png' />
 				<title>Contact | Millicent Mehndi</title>
 			</Head>
 			<Nav />
