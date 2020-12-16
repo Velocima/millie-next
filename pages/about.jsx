@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Nav from '../components/nav';
 // import '../styles/about.css';
 {
 	/* 
@@ -19,6 +20,7 @@ export default function About() {
 				<link rel='icon' type='image/png' href='/images/icon.png' />
 				<title>About | Millicent Mehndi</title>
 			</Head>
+			<Nav />
 			<div class='banner'>
 				<h1>ABOUT</h1>
 			</div>
