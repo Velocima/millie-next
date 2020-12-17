@@ -1,10 +1,32 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import useWindowSize from '../lib/useWindowSize';
 import style from '../styles/index.module.css';
 import Icon from '../components/icon';
 import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 export default function Index() {
+	const [width, height] = useWindowSize();
+	const [isNavOpen, setIsNavOpen] = useState(false);
+
+	const handleBurgerClick = () => {
+		setIsNavOpen((prevState) => !prevState);
+	};
+
+	useEffect(() => {
+		setIsNavOpen(false);
+	}, [width, height]);
+
+	const burgerStyle = {
+		transform: isNavOpen ? 'rotate(180deg)' : 'none',
+	};
+
+	const menuStyle = {
+		transform: isNavOpen ? 'translateY(0)' : 'translateY(-100%)',
+		opacity: isNavOpen ? 1 : 0,
+	};
+
 	return (
 		<>
 			<Head>
@@ -13,7 +35,7 @@ export default function Index() {
 			</Head>
 			<div className={style.landing}>
 				<div className={style.landingShadow}>
-					<nav className={style.nav}>
+					<nav className={style.nav} style={menuStyle}>
 						<Link href='/about'>
 							<a>
 								<span>ABOUT</span>
@@ -31,7 +53,7 @@ export default function Index() {
 							</a>
 						</Link>
 					</nav>
-					<div className={style.burger}>
+					<div className={style.burger} onClick={handleBurgerClick} style={burgerStyle}>
 						<div className={style.line}></div>
 						<div className={style.line}></div>
 						<div className={style.line}></div>
