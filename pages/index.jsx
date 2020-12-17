@@ -8,9 +8,9 @@ export default function Index() {
 				<link rel='icon' type='image/png' href='/images/icon.png' />
 				<title>Millicent Mehndi</title>
 			</Head>
-			<div class='landing'>
-				<div class='landing-shadow'>
-					<nav class='nav menu'>
+			<div className='landing'>
+				<div className='landing-shadow'>
+					<nav className='nav menu'>
 						<Link href='/about'>
 							<a>
 								<span>ABOUT</span>
@@ -18,7 +18,7 @@ export default function Index() {
 						</Link>
 						<Link href='/gallery'>
 							<a>
-								<span class='center'>GALLERY</span>
+								<span className='center'>GALLERY</span>
 							</a>
 						</Link>
 						<Link href='/contact'>
@@ -27,26 +27,26 @@ export default function Index() {
 							</a>
 						</Link>
 					</nav>
-					<div class='burger'>
-						<div class='line'></div>
-						<div class='line'></div>
-						<div class='line'></div>
+					<div className='burger'>
+						<div className='line'></div>
+						<div className='line'></div>
+						<div className='line'></div>
 					</div>
-					<div class='title-container'>
-						<div class='title'>
+					<div className='title-container'>
+						<div className='title'>
 							<h1>MILLICENT MEHNDI</h1>
 							<h3>HENNA TATTOO ARTIST</h3>
 						</div>
-						<div class='social'>
+						<div className='social'>
 							<a
 								href='https://www.facebook.com/Millicentmehndi'
 								target='_blank'
-								class='fa fa-facebook'
+								className='fa fa-facebook'
 							></a>
 							<a
 								href='https://www.instagram.com/millicent_mehndi/'
 								target='_blank'
-								class='fa fa-instagram'
+								className='fa fa-instagram'
 							></a>
 						</div>
 					</div>

@@ -20,10 +20,10 @@ export default function About() {
 				<title>About | Millicent Mehndi</title>
 			</Head>
 			<Nav />
-			<div class='banner'>
+			<div className='banner'>
 				<h1>ABOUT</h1>
 			</div>
-			<div class='content'>
+			<div className='content'>
 				<img src='/images/profile.jpg' alt='Henna artist Millie' />
 				<p>
 					<span>Millie Sutton</span>
