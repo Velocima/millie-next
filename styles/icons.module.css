@@ -1,10 +1,18 @@
 .link {
 	display: grid;
+	grid-template-columns: 50px auto;
+	grid-template-rows: 50px;
+	place-items: center;
+	margin: 20px 2rem;
+	transition: opacity 0.15s ease-out;
+}
+
+.icon {
+	display: grid;
 	place-items: center;
 	width: 50px;
 	height: 50px;
 	margin: 20px 2rem;
 	border-radius: 50%;
-	transition: opacity 0.15s ease-out;
 	color: white;
 }

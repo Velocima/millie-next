@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { IconContext } from 'react-icons';
 import style from '../styles/icons.module.css';
 
-export default function Icon({ color, children, href }) {
+export default function Icon({ color, children, href, text }) {
 	const [isHovered, setIsHovered] = useState(false);
 
 	const handleMouseEnter = () => {
@@ -25,11 +25,13 @@ export default function Icon({ color, children, href }) {
 			target='_blank'
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
-			style={iconStyle}
 		>
-			<IconContext.Provider value={{ color: 'white', size: '30px' }}>
-				{children}
-			</IconContext.Provider>
+			<div className={style.icon} style={iconStyle}>
+				<IconContext.Provider value={{ color: 'white', size: '30px' }}>
+					{children}
+				</IconContext.Provider>
+			</div>
+			{text}
 		</a>
 	);
 }
