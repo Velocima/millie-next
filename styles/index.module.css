@@ -53,14 +53,7 @@
 	-moz-transition: all 0.7s;
 	-o-transition: all 0.7s;
 	transition: all 0.7s;
-}
-
-.burger:hover {
-	opacity: 0.6;
-}
-
-.burger-active {
-	transform: rotate(180deg);
+	cursor: pointer;
 }
 
 .line {

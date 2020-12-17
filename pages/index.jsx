@@ -43,7 +43,6 @@ export default function Index() {
 						</Link>
 						<Link href='/gallery'>
 							<a>
-								{/* <span className='center'>GALLERY</span> */}
 								<span>GALLERY</span>
 							</a>
 						</Link>
