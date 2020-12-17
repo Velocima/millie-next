@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import style from '../styles/index.module.css';
+import Icon from '../components/icon';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 export default function Index() {
 	return (
@@ -8,9 +11,9 @@ export default function Index() {
 				<link rel='icon' type='image/png' href='/images/icon.png' />
 				<title>Millicent Mehndi</title>
 			</Head>
-			<div className='landing'>
-				<div className='landing-shadow'>
-					<nav className='nav menu'>
+			<div className={style.landing}>
+				<div className={style.landingShadow}>
+					<nav className={style.nav}>
 						<Link href='/about'>
 							<a>
 								<span>ABOUT</span>
@@ -18,7 +21,8 @@ export default function Index() {
 						</Link>
 						<Link href='/gallery'>
 							<a>
-								<span className='center'>GALLERY</span>
+								{/* <span className='center'>GALLERY</span> */}
+								<span>GALLERY</span>
 							</a>
 						</Link>
 						<Link href='/contact'>
@@ -27,27 +31,26 @@ export default function Index() {
 							</a>
 						</Link>
 					</nav>
-					<div className='burger'>
-						<div className='line'></div>
-						<div className='line'></div>
-						<div className='line'></div>
+					<div className={style.burger}>
+						<div className={style.line}></div>
+						<div className={style.line}></div>
+						<div className={style.line}></div>
 					</div>
-					<div className='title-container'>
-						<div className='title'>
+					<div className={style.titleContainer}>
+						<div className={style.title}>
 							<h1>MILLICENT MEHNDI</h1>
 							<h3>HENNA TATTOO ARTIST</h3>
 						</div>
-						<div className='social'>
-							<a
-								href='https://www.facebook.com/Millicentmehndi'
-								target='_blank'
-								className='fa fa-facebook'
-							></a>
-							<a
+						<div className={style.social}>
+							<Icon color='#3b5998' href='https://www.facebook.com/Millicentmehndi'>
+								<FaFacebookF />
+							</Icon>
+							<Icon
+								color='#125688'
 								href='https://www.instagram.com/millicent_mehndi/'
-								target='_blank'
-								className='fa fa-instagram'
-							></a>
+							>
+								<FaInstagram />
+							</Icon>
 						</div>
 					</div>
 				</div>
