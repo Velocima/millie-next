@@ -1,0 +1,10 @@
+.link {
+	display: grid;
+	place-items: center;
+	width: 50px;
+	height: 50px;
+	margin: 20px 2rem;
+	border-radius: 50%;
+	transition: opacity 0.15s ease-out;
+	color: white;
+}

@@ -1,44 +1,43 @@
 import Link from 'next/link';
+import style from '../styles/nav.module.css';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import Icon from './icon';
 
 export default function Nav() {
 	return (
-		<nav class='nav'>
-			<div class='logo'>
+		<nav className={style.nav}>
+			<div className={style.logo}>
 				<Link href='/'>
 					<a>
-						<h3>MILLICENT MEHNDI</h3>
+						<h3 className={style.logoHeader}>MILLICENT MEHNDI</h3>
 					</a>
 				</Link>
-				<div class='social'>
-					<a
-						href='https://www.facebook.com/Millicentmehndi'
-						target='_blank'
-						class='fa fa-facebook'
-					></a>
-					<a
-						href='https://www.instagram.com/millicent_mehndi/'
-						target='_blank'
-						class='fa fa-instagram'
-					></a>
+				<div className={style.social}>
+					<Icon color='#3b5998' href='https://www.facebook.com/Millicentmehndi'>
+						<FaFacebookF />
+					</Icon>
+					<Icon color='#125688' href='https://www.instagram.com/millicent_mehndi/'>
+						<FaInstagram />
+					</Icon>
 				</div>
 			</div>
-			<div class='burger'>
-				<div class='line'></div>
-				<div class='line'></div>
-				<div class='line'></div>
+			<div className={style.burger}>
+				<div className={style.line}></div>
+				<div className={style.line}></div>
+				<div className={style.line}></div>
 			</div>
-			<ul class='menu'>
-				<li>
+			<ul className={`menu ${style.list}`}>
+				<li className={style.listItem}>
 					<Link href='/about'>
 						<a>ABOUT</a>
 					</Link>
 				</li>
-				<li>
+				<li className={style.listItem}>
 					<Link href='/gallery'>
 						<a>GALLERY</a>
 					</Link>
 				</li>
-				<li>
+				<li className={style.listItem}>
 					<Link href='/contact'>
 						<a>CONTACT</a>
 					</Link>
