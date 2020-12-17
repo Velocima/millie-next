@@ -68,6 +68,9 @@
 	font-weight: 300;
 	padding: 2rem;
 }
+.listItem a {
+	font-size: 20px;
+}
 
 @media screen and (max-width: 1050px) {
 	.nav {
