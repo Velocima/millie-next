@@ -1,16 +1,6 @@
 import Head from 'next/head';
 import Nav from '../components/nav';
-// import '../styles/about.css';
-{
-	/* 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.typekit.net/bkw3yql.css">
-<!-- Icons -->
-<script src="https://kit.fontawesome.com/be80390338.js" crossorigin="anonymous"></script>
-<!-- Title -->
-	*/
-}
+import style from '../styles/about.module.css';
 
 export default function About() {
 	return (
@@ -20,10 +10,10 @@ export default function About() {
 				<title>About | Millicent Mehndi</title>
 			</Head>
 			<Nav />
-			<div className='banner'>
+			<div className={style.banner}>
 				<h1>ABOUT</h1>
 			</div>
-			<div className='content'>
+			<div className={style.content}>
 				<img src='/images/profile.jpg' alt='Henna artist Millie' />
 				<p>
 					<span>Millie Sutton</span>
