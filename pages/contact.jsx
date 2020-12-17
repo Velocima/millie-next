@@ -36,18 +36,3 @@ export default function Contact() {
 		</>
 	);
 }
-
-{
-	/* <a href='tel:07874816348'>
-					<div className={style.contact}>
-						<i className='far fa-envelope'></i>
-						<h4>millie@millicent-mehndi.co.uk</h4>
-					</div>
-				</a>
-				<a href='tel:07874816348'>
-					<div className={style.contact}>
-						<i className='fas fa-phone'></i>
-						<h4>07874 816348</h4>
-					</div>
-				</a> */
-}
