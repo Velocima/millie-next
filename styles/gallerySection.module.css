@@ -1,0 +1,22 @@
+.content {
+	background-color: rgb(230, 230, 230);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 5vh 0;
+}
+
+.imageContainer {
+	overflow: hidden;
+	margin: 1vw;
+}
+
+.imageContainer img {
+	object-fit: cover;
+	object-position: center;
+	overflow: hidden;
+	width: 28vw;
+	height: 28vw;
+	transition: transform 0.3s;
+}
