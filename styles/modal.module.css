@@ -1,0 +1,76 @@
+.modal {
+	z-index: 30;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: hsl(0, 0%, 30%, 0.7);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.5s ease;
+}
+
+.image {
+	z-index: 40;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 80vw;
+	max-height: 90vh;
+	border-radius: 5px;
+	opacity: 1;
+	transition: opacity 0.8s;
+}
+
+.right,
+.left {
+	display: flex;
+	cursor: pointer;
+	height: 100%;
+	flex: 1;
+	align-items: center;
+	color: white;
+	transition: all 0.3s;
+}
+.left {
+	justify-content: flex-start;
+	padding-left: 5vw;
+}
+.right {
+	justify-content: flex-end;
+	padding-right: 5vw;
+}
+.close {
+	background-color: hsl(0, 0%, 30%, 0.7);
+	z-index: 40;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	color: white;
+	font-size: 2.5em;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	opacity: 0.95;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.close:hover,
+.right:hover,
+.left:hover {
+	color: hsl(0, 0%, 20%);
+	opacity: 0.7;
+}
+.close:hover {
+	background-color: hsl(0, 0%, 95%);
+}
