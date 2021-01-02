@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 1050px) {
 	.nav {
-		justify-content: start;
+		justify-content: flex-start;
 	}
 	.logoHeader {
 		margin-right: 100px;
@@ -82,7 +82,7 @@
 
 	.social {
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 	}
 
 	.burger {
