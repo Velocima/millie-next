@@ -5,7 +5,7 @@ export default function GallerySection({ images, onClick }) {
 		<div className={style.content}>
 			{images.map((image) => {
 				return (
-					<div className={style.imageContainer}>
+					<div className={style.imageContainer} key={image.image}>
 						<img src={image.image} alt={image.alt} onClick={onClick} />
 					</div>
 				);
