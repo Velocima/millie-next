@@ -59,7 +59,7 @@ export default function Gallery() {
 		{ image: '/images/HENNA/122.jpg', alt: '' },
 		{ image: '/images/HENNA/123.jpg', alt: '' },
 		{ image: '/images/HENNA/124.jpg', alt: '' },
-		{ image: '/images/HENNA/grey-6.jpg', alt: '' },
+		{ image: '/images/HENNA/Grey-6.jpg', alt: '' },
 	];
 
 	const allGalleryImages = [
@@ -85,9 +85,11 @@ export default function Gallery() {
 	};
 
 	const handleImageClick = ({ target }) => {
+		const src = target.src.slice(target.src.indexOf('/images'));
 		setIsFirstImage(true);
-		setModalImage((prevState) => {
-			return { ...prevState, imageOne: { image: target.src, alt: target.alt } };
+		setModalImage({
+			imageOne: { image: src, alt: target.alt },
+			imageTwo: { image: src, alt: target.alt },
 		});
 		setIsModalOpen(true);
 	};
@@ -163,7 +165,7 @@ export default function Gallery() {
 		return () => {
 			document.removeEventListener('keydown', onKeyPress);
 		};
-	}, [handleCloseModal, handleModalLeftClick, handleModalRightClick]);
+	}, [handleCloseModal, handleModalLeftClick, handleModalRightClick, modalImage]);
 	return (
 		<>
 			<Head>
