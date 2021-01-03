@@ -3,7 +3,7 @@ import Nav from '../components/nav';
 import GallerySection from '../components/gallerySection';
 import Modal from '../components/Modal';
 import { useState, useEffect } from 'react';
-import next from 'next';
+import style from '../styles/gallery.module.css';
 
 export default function Gallery() {
 	const gallerySection1 = [
@@ -173,26 +173,38 @@ export default function Gallery() {
 				<title>Gallery | Millicent Mehndi</title>
 			</Head>
 			<Nav />
-			<div className='banner'>
+			<div className={style.banner}>
 				<h1>GALLERY</h1>
 			</div>
 			<GallerySection images={gallerySection1} onClick={handleImageClick} />
-			<div className='headline headline-1'>
+			<div
+				className={style.headline}
+				style={{ backgroundImage: "url('/images/HENNA/Center-1.jpg')" }}
+			>
 				<h2>UNIQUE SETUP</h2>
 				<h4>VINTAGE VW CAMPERVAN</h4>
 			</div>
 			<GallerySection images={gallerySection2} onClick={handleImageClick} />
-			<div className='headline headline-2'>
+			<div
+				className={style.headline}
+				style={{ backgroundImage: "url('/images/HENNA/Center-2.jpg')" }}
+			>
 				<h2>BESPOKE DESIGNS</h2>
 				<h4>FOR EVERY OCCASION</h4>
 			</div>
 			<GallerySection images={gallerySection3} onClick={handleImageClick} />
-			<div className='quote headline-3 headline'>
+			<div
+				className={`${style.headline} ${style.quote}`}
+				style={{ backgroundImage: "url('/images/HENNA/125.jpg')" }}
+			>
 				<h4>“Beautifully intricate henna tattoo, leaving a lovely defined stain.”</h4>
 				<p>— Caroline Scamell</p>
 			</div>
 			<GallerySection images={gallerySection4} onClick={handleImageClick} />
-			<div className='headline-4 quote headline'>
+			<div
+				className={`${style.headline} ${style.quote}`}
+				style={{ backgroundImage: "url('/images/HENNA/129.jpg')" }}
+			>
 				<h4>
 					“I can’t quite describe Millie’s amazing talent with henna, she is phenomenal. ”
 				</h4>

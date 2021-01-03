@@ -74,3 +74,32 @@
 .close:hover {
 	background-color: hsl(0, 0%, 95%);
 }
+
+.modal span {
+	color: inherit;
+	font-size: 3em;
+	font-weight: 700;
+	opacity: 0.95;
+	font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+	.close {
+		top: 15px;
+		right: 15px;
+		font-size: 2em;
+		width: 45px;
+		height: 45px;
+		border-radius: 3px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.close {
+		top: 15px;
+		right: 15px;
+		font-size: 1.5em;
+		width: 30px;
+		height: 30px;
+	}
+}

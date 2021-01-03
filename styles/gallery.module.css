@@ -1,0 +1,118 @@
+.banner {
+	height: 40vh;
+	background-image: url('/images/HENNA/Banner-Gallery-full.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banner h1 {
+	font-family: 'acumin-pro-wide', sans-serif;
+	font-weight: 100;
+	color: white;
+	font-size: 80px;
+	letter-spacing: 0.9em;
+	text-indent: 0.8em;
+	text-shadow: 1px 1px 2px black;
+}
+
+.headline {
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	max-height: 100vh;
+	min-height: 80vh;
+	width: 88vw;
+	margin: 0 auto;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.headline h2,
+.headline h4 {
+	text-align: center;
+	color: white;
+	opacity: 0.85;
+}
+
+.headline h2 {
+	font-size: 6em;
+	letter-spacing: 0.25em;
+	font-family: 'Cormorant', serif;
+	font-weight: 300;
+	padding: 15px;
+}
+
+.headline h4 {
+	font-family: 'acumin-pro-wide', sans-serif;
+	font-weight: 100;
+	font-size: 1.75em;
+	letter-spacing: 0.1em;
+	padding: 15px;
+}
+.quote h4 {
+	text-shadow: 1px 1px black;
+	max-width: 70%;
+	font-size: 2em;
+}
+
+.quote p {
+	font-size: 1.25em;
+	color: white;
+	text-align: center;
+	font-family: 'Cormorant', serif;
+}
+
+@media screen and (max-width: 1000px) {
+	.banner h1 {
+		font-size: 60px;
+		letter-spacing: 0.7em;
+		text-indent: 0.6em;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.banner h1 {
+		font-size: 50px;
+		letter-spacing: 0.4em;
+		text-indent: 0.4em;
+	}
+
+	.headline h2 {
+		font-size: 4.5em;
+		letter-spacing: 0.15em;
+	}
+
+	.headline h4 {
+		font-size: 1.2em;
+	}
+	.quote h4 {
+		font-weight: 200;
+	}
+	.quote p {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.banner h1 {
+		font-size: 35px;
+		letter-spacing: 0.3em;
+		text-indent: 0.3em;
+	}
+
+	.headline h2 {
+		font-size: 3em;
+	}
+
+	.headline h4 {
+		font-size: 1em;
+	}
+}

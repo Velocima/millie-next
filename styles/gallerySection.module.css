@@ -7,6 +7,10 @@
 	padding: 5vh 0;
 }
 
+.content img:hover {
+	transform: scale(1.1);
+}
+
 .imageContainer {
 	overflow: hidden;
 	margin: 1vw;
@@ -19,4 +23,12 @@
 	width: 28vw;
 	height: 28vw;
 	transition: transform 0.3s;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+	.content img {
+		height: 43vw;
+		min-width: 43vw;
+	}
 }
