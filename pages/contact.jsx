@@ -24,14 +24,14 @@ export default function Contact() {
 				<p>To book me for a festival or commission some work get in touch with me via: </p>
 				<Icon
 					color='rgb(41, 122, 228)'
-					href='mailto:millie@millicent-mehndi.co.uk'
-					text={<h4>millie@millicent-mehndi.co.uk</h4>}
+					href='mailto:millicentmehndi@yahoo.com'
+					text={<h4>millicentmehndi@yahoo.com</h4>}
 				>
 					<FaRegEnvelope />
 				</Icon>
 				<Icon
 					color='rgb(41, 122, 228)'
-					href='mailto:millie@millicent-mehndi.co.uk'
+					href='tel:07874 816348'
 					text={<h4>07874 816348</h4>}
 				>
 					<FaPhone />
