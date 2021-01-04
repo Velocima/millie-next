@@ -18,7 +18,7 @@ export default function About() {
 				<h1>ABOUT</h1>
 			</div>
 			<div className={style.content}>
-				<img src='/images/profile.jpg' alt='Henna artist Millie' />
+				<img src='/images/profile.jpg' alt='Henna tattoo artist Millicent Sutton.' />
 				<p>
 					<span>Millie Sutton</span>
 					<br />
