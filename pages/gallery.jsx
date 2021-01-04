@@ -46,7 +46,7 @@ export default function Gallery() {
 		{ image: '/images/HENNA/135-full.jpg', alt: '' },
 	];
 	const gallerySection4 = [
-		{ image: '/images/HENNA/Banner-About-full.jpg', alt: '' },
+		{ image: '/images/HENNA/125.jpg', alt: '' },
 		{ image: '/images/HENNA/Banner-Contact-full.jpg', alt: '' },
 		{ image: '/images/HENNA/Banner-Gallery-full.jpg', alt: '' },
 		{ image: '/images/HENNA/126-full.jpg', alt: '' },
