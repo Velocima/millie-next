@@ -8,6 +8,10 @@ export default function About() {
 			<Head>
 				<link rel='icon' type='image/png' href='/images/icon.png' />
 				<title>About | Millicent Mehndi</title>
+				<meta
+					name='description'
+					content='All about the Henna tattoo artist Millie Sutton and how the business runs.'
+				/>
 			</Head>
 			<Nav />
 			<div className={style.banner}>

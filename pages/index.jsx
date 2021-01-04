@@ -32,6 +32,10 @@ export default function Index() {
 			<Head>
 				<link rel='icon' type='image/png' href='/images/icon.png' />
 				<title>Millicent Mehndi</title>
+				<meta
+					name='description'
+					content='Millicent Mehndi is a Henna tattoo business owned and run by artist Millicent Sutton.'
+				/>
 			</Head>
 			<div className={style.landing}>
 				<div className={style.landingShadow}>

@@ -171,6 +171,10 @@ export default function Gallery() {
 			<Head>
 				<link rel='icon' type='image/png' href='/images/icon.png' />
 				<title>Gallery | Millicent Mehndi</title>
+				<meta
+					name='description'
+					content='A photo gallery showcasing the intricate and original Henna tattoo designs created by Millicent Mehndi.'
+				/>
 			</Head>
 			<Nav />
 			<div className={style.banner}>

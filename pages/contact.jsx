@@ -10,6 +10,10 @@ export default function Contact() {
 			<Head>
 				<link rel='icon' type='image/png' href='/images/icon.png' />
 				<title>Contact | Millicent Mehndi</title>
+				<meta
+					name='description'
+					content='How to get in touch with Millicent Mehndi for business enquiries.'
+				/>
 			</Head>
 			<Nav />
 			<div className={style.banner}>
